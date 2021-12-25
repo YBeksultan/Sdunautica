@@ -4,6 +4,7 @@
 * {
     margin: 0;
      font-family: 'Poppins', sans-serif;
+     scroll-behavior: smooth;
 }
 
 .header {
@@ -72,6 +73,9 @@
     opacity: 1;
     transform: translateX(-190px);
 }
+
+
+
   
 .search:hover{
     background-color: #313131;
@@ -191,6 +195,20 @@
 .BigMenu.active{
     top: 0;
 }
+.nav{
+    list-style-type: none;
+}
+.nav a{
+   font-size: 50px;
+    text-decoration: none;
+    color: white;
+}
+.nav a:hover{
+    color:#aaaaaa
+}
+.nav li{
+    margin: 50px auto;
+}
 .main{
     font-family: 'Poppins', sans-serif;
 }
@@ -209,6 +227,7 @@
     margin-bottom:40px;
 }
 .text h2{
+    color: black;
     margin:0 auto;
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -254,62 +273,111 @@
 }
 .library{
     height: 1000px;
-
-   
-
+    border-bottom: 40px solid rgba(191, 57, 43, 1);
     background-image: linear-gradient(to bottom, rgb(255, 255, 255) 10%, rgb(255, 255, 255) calc(50% - 400px), transparent calc(50% - 10px), transparent calc(50% + 30px), #BF392B calc(50% + 500px)), url("https://sdu.edu.kz/wp-content/uploads/2019/10/AS_-12.jpg");
     background-position: center;
     background-size: cover;
 
 }
-.library h1{
+.desk a{
+    color:black;
+
+    text-decoration: none;
+}
+.desk a h1{
+    
     text-align: center;
     font-size: 75px;
 }
-.st11{fill:none;stroke:#000000;stroke-width:5;}
+.desk h2{
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    width: 700px;
+    margin-bottom: 40px;
+}
+.image-container{
+    margin: 0 auto;
+    height: auto;
+
+    position: relative;
+}
+.image-container img{
+    max-width: 800px;
+    max-height: 400px;
+    cursor: pointer;
+}
+.transition-image{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity:0;
+    transition: opacity 0.5s ease;
+}
+.transition-image:hover{
+    opacity: 1;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.aboutLibrary{
+    margin: 0 auto;
+}
+.aboutLibrary h1{
+    color:rgb(0, 10, 143);
+}
+.aboutLibrary hr{
+    border: 1px solid #BF392B;
+    background-color: #BF392B;
+    margin: 20px auto;
+}
+.aboutLibrary p{
+    color:rgb(218, 218, 218);
+    font-size: 18px;
+    width: 400px;
+    background-color: rgba(11, 0, 165, 0.6);
+    padding: 20px;
+    border-radius: 50px;
+}
+.redCanteen{
+    height: 700px;
+    background-image: linear-gradient(rgba(191, 57, 43, 0.8) , rgba(0, 0, 0, 1)),url("https://zhudysblog.files.wordpress.com/2019/03/whatsapp-image-2019-03-11-at-22.15.05.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.redCanteen h1{
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.redCanteen h1, h2{
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+.redCanteen h2{
+    font-size: 40px;
+    padding-bottom: 60px;
+}
+.st11{fill:white;stroke:#000000;stroke-width:5;}
 .st12{fill:none;stroke:#000000;stroke-width:2;}
 .st13{fill:none;stroke:#000000;stroke-width:3;}
 .st14{fill:none;stroke:#000000;stroke-width:4;}
 .st10{fill:none;stroke:#000000;stroke-width:2;}
 .st15{fill:none;stroke:#000000;}
 
-.st12 {
-    fill: none;
-    stroke: #000000;
-    stroke-width: 2;
-}
-
-.st13 {
-    fill: none;
-    stroke: #000000;
-    stroke-width: 3;
-}
-
-.st14 {
-    fill: none;
-    stroke: #000000;
-    stroke-width: 4;
-}
-
-.st10 {
-    fill: none;
-    stroke: #000000;
-    stroke-width: 2;
-}
-
-.st15 {
-    fill: none;
-    stroke: #000000;
-}
-
-.st0, .st1, .st2, .st3, .st4, .st5, .st16 {
+.st0, .st1, .st2, .st3,.st4, .st5, .st16 {
     fill: transparent;
     stroke: #000000;
     stroke-width: 0;
     transition: 1s;
 }
-
-.st6, .st7, .st8, .st9 {
+.st16{
+    stroke-width: 100px;
+}
+ .st6, .st7, .st8, .st9{
     fill: transparent;
     stroke: #000000;
     stroke-width: 3px;
@@ -317,6 +385,184 @@
 }
 
 .st0:hover, .st1:hover, .st2:hover, .st3:hover, .st4:hover, .st5:hover, .st6:hover, .st7:hover, .st8:hover, .st9:hover, .st16:hover {
-    fill: rgb(102, 212, 255);
+    fill: rgb(170, 231, 255);
     cursor: pointer;
+}
+.karta{
+    background-image: linear-gradient(rgba(0, 0, 0, 1) , rgba(0, 3, 158, 0.7)),url("https://i.pinimg.com/736x/d2/66/73/d26673d6106e11fa1f402fe0124c174c.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+}
+.karta h1{
+    margin: 0 auto;
+    padding-top: 150px;
+    color: white;
+    width:500px;
+}
+@media (max-width:1120px){
+    .image-container img{
+        margin-top: 100px;
+        max-width: 450px;
+        max-height: 250px;
+        cursor: pointer;
+    }
+    .desk a h1{
+        font-size: 50px;
+    }
+    .desk h2{
+    
+        font-size: 25px;
+        
+    }
+}
+@media (max-width:910px){
+    .image-container img{
+        margin-top: 150px;
+        max-width: 400px;
+        max-height: 225px;
+        cursor: pointer;
+    }
+    .desk a h1{
+        font-size: 50px;
+    }
+    .desk h2{
+    
+        font-size: 25px;
+        
+    }
+
+    .aboutLibrary hr{
+        border: 1px solid #BF392B;
+        background-color: #BF392B;
+        margin: 20px auto;
+    }
+    .aboutLibrary p{
+        color:rgb(218, 218, 218);
+        font-size: 15px;
+        width: 275px;
+        background-color: rgba(11, 0, 165, 0.6);
+        padding: 20px;
+        border-radius: 50px;
+    }
+}
+@media (max-width:760px){
+    #enum, #srch{
+        display: none;
+    }
+  
+    .search{
+        padding: auto;
+    }
+    .menu, .search{
+       
+        width: fit-content;
+    }
+    .logo{
+        opacity: 0;
+        width: 0px;
+    }
+    .about{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .image-container img{
+        margin-top: 150px;
+        max-width: 300px;
+        max-height: 225px;
+        cursor: pointer;
+    }
+    .desk a h1{
+        font-size: 50px;
+    }
+    .desk h2{
+    
+        font-size: 25px;
+        
+    }
+
+    .aboutLibrary hr{
+        border: 1px solid #BF392B;
+        background-color: #BF392B;
+        margin: 20px auto;
+    }
+    .aboutLibrary p{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .karta h1{
+        font-size: 25px;
+    }
+    .nav a{
+        font-size: 30px;
+         
+     }
+}
+@media (max-width:500px){
+    #enum, #srch{
+        display: none;
+    }
+  
+    .search{
+        padding: auto;
+    }
+    .menu, .search{
+       
+        width: fit-content;
+    }
+    .logo{
+        opacity: 0;
+        width: 0px;
+    }
+    .about{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .image-container img{
+        margin-top: 150px;
+        max-width: 300px;
+        max-height: 225px;
+        cursor: pointer;
+    }
+    .desk a h1{
+        font-size: 40px;
+    }
+    .desk h2{
+    
+        font-size: 22px;
+        width: 200px;
+        
+    }
+
+    .aboutLibrary hr{
+        border: 1px solid #BF392B;
+        background-color: #BF392B;
+        margin: 20px auto;
+    }
+    .aboutLibrary p{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .karta h1{
+        font-size: 20px;
+        width: 200px;
+    }
+    .nav a{
+        font-size: 30px;
+         
+     }
+     .text strong{
+         font-size: 30px;
+         margin: 0 200px 0 0
+     }
+     .text h2{
+        font-size: 20px;
+        width: 300px;
+    }
+    .redCanteen h1, .redCanteen h2{
+        font-size: 28px;
+    }
 }
