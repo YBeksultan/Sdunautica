@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-*{
+* {
     margin: 0;
      font-family: 'Poppins', sans-serif;
      scroll-behavior: smooth;
 }
-.header{
+
+.header {
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -37,7 +38,8 @@
     margin:0 10px 0 40px;
     cursor:pointer;
 }
-.searchAndMenu{
+
+.searchAndMenu {
     display: flex;
  
 }
@@ -78,14 +80,16 @@
 .search:hover{
     background-color: #313131;
 }
-.search img{
-    
+
+.search img {
+
     width: 25px;
     height: 25px;
     margin: 0 auto;
     
 }
-.search h1{
+
+.search h1 {
     font-family: 'Inconsolata', monospace;
     font-size: 22px;
 }
@@ -95,28 +99,30 @@
     width: 125px;
     z-index: 5;
     background-color: #000000;
-    padding:40px 30px;
-    cursor:pointer;
+    padding: 40px 30px;
+    cursor: pointer;
     transition: 0.3s;
     color: white;
     display: flex;
     transition: 0.5s;
 }
-.menu:hover{
+
+.menu:hover {
     background-color: #313131;
 }
 
-.header_burger{
+.header_burger {
     display: block;
     width:30px;
     height:20px;
     margin-right: 15px;
     position: relative;
-        z-index: 3;
+    z-index: 3;
 
 }
+
 .header_burger:before,
-.header_burger:after{
+.header_burger:after {
     content: '';
     background-color: #fff;
     position: absolute;
@@ -125,7 +131,8 @@
     left: 0;
 
 }
-.header_burger span{
+
+.header_burger span {
     position: absolute;
     left: 0;
     background-color: white;
@@ -134,17 +141,20 @@
     top: 9px;
     transition: all 0.3s ease 0s;
 }
-.header_burger:before{
+
+.header_burger:before {
     top: 0;
     transition: all 0.3s ease 0s;
 
 }
-.header_burger:after{
+
+.header_burger:after {
     bottom: 0;
     transition: all 0.3s ease 0s;
 
 }
-.header_burger.active:before{
+
+.header_burger.active:before {
     transform: rotate(45deg);
     top: 9px;
 }
@@ -155,8 +165,9 @@
 
 .header_burger.active span{
     transform: scale(0);
-      }
-.header_burger.active:after{
+}
+
+.header_burger.active:after {
     transform: rotate(-45deg);
     bottom: 9px;
 }
@@ -171,7 +182,7 @@
     z-index: 2;
     position: fixed;
     top: -100%;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100%;
 
@@ -359,7 +370,8 @@
 
 .st0, .st1, .st2, .st3,.st4, .st5, .st16 {
     fill: transparent;
-    stroke:#000000;stroke-width: 0;
+    stroke: #000000;
+    stroke-width: 0;
     transition: 1s;
 }
 .st16{
@@ -367,7 +379,8 @@
 }
  .st6, .st7, .st8, .st9{
     fill: transparent;
-    stroke:#000000;stroke-width: 3px;
+    stroke: #000000;
+    stroke-width: 3px;
     transition: 1s;
 }
 
